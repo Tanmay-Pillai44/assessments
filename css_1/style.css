@@ -1,0 +1,24 @@
+.text1 {
+    color: red;
+}
+
+.oList {
+    color: maroon;
+    font-weight: 500;
+    
+}
+
+.uList {
+    color: maroon;
+    letter-spacing: 5px;
+    font-weight: 500;
+}
+
+.yText {
+    background-color: yellow;
+}
+
+
+.para {
+    color: chocolate;
+}
