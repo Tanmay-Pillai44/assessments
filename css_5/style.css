@@ -251,14 +251,7 @@ body {
 	width: 600%;
     margin: 0px;
     position: relative;
-	/* animation: sky 5s linear 0s infinite; */
 }
-
-/* @keyframes sky {
-    100% {
-        transform: translateX(-1000px);
-    }
-} */
 
 .sun {
 	width: 100%;
@@ -270,7 +263,7 @@ body {
 }
 
 .sun-img {
-    animation: sun 100s linear 0s infinite;
+    animation: sun 100s linear 1s infinite;
 }
 
 @keyframes sun {
@@ -292,7 +285,7 @@ body {
 	left: 0px;
 	right: 0px;
     z-index: 1;
-	animation: road 15s linear 0s infinite;
+	animation: road 15s linear 1s infinite;
 }
 
 @keyframes road {
@@ -310,7 +303,7 @@ body {
 	left: 0px;
 	right: 0px;
     z-index: 1;
-	animation: city 50s linear 0s infinite;
+	animation: city 50s linear 1s infinite;
 }
 
 @keyframes city {
@@ -329,7 +322,7 @@ body {
     position: absolute;
 	bottom: 105px;
 	z-index: 2;
-    animation: car 1s linear 2s infinite;
+    animation: car 1s linear 1s infinite;
 }
 
 @keyframes car {
@@ -356,13 +349,13 @@ body {
 .front-wheel {
     position: absolute;
 	left: 200px;
-	animation: wheel-rotate 1.5s linear 2s infinite;
+	animation: wheel-rotate 1.5s linear 1s infinite;
 }
 
 .rear-wheel {
     position: absolute;
 	left: -76px;
-	animation: wheel-rotate 1.5s linear 0s infinite;
+	animation: wheel-rotate 1.5s linear 1s infinite;
 }
 
 @keyframes wheel-rotate {
