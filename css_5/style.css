@@ -1,0 +1,387 @@
+body {
+    background-color: chartreuse;
+    margin: 0px;
+}
+
+/* index.html */
+
+.header {
+    text-align: center;
+    margin: auto;
+    width: 40%;
+}
+
+.container1 {
+    width: 40%;
+    margin: auto;
+}
+
+.row1 {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.r1-box {
+    width: 100px;
+    height: 100px;
+    background-color: royalblue;
+    transform: skew(-20deg);
+    margin-bottom: 60px;
+    animation: row1 5s linear 2s infinite;
+}
+
+@keyframes row1 {
+    50% {transform: skew(20deg);}
+}
+
+.r2-box {
+    width: 100px;
+    height: 100px;
+    background-color: salmon;
+    transform: skew(0, 20deg);
+    margin-bottom: 60px;
+    animation: row2 5s linear 2s infinite;
+}
+
+@keyframes row2 {
+    50% {transform: skew(0, -20deg);}
+}
+
+.r3-box {
+    width: 100px;
+    height: 100px;
+    background-color: blueviolet;
+    transform: rotate(0deg);
+    margin-bottom: 60px;
+    animation: row3 3s ease-in-out 2s infinite;
+}
+
+@keyframes row3 {
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.r4-box {
+    width: 100px;
+    height: 100px;
+}
+
+.box1 {
+    background-color: red;
+    transform: scale(1, 0.5);
+    animation: box1 3s ease-in-out 2s infinite;
+}
+
+@keyframes box1 {
+    50% {
+        transform: scale(1, 1);
+    }
+}
+
+.box2 {
+    background-color: deeppink;
+    transform: scale(0.3, 1);
+    animation: box1 3s ease-in-out 2s infinite;
+}
+
+.box3 {
+    background-color: deepskyblue;
+    transform: rotate(-10deg);
+    animation: box3 2s linear 2s infinite;
+}
+
+@keyframes box3 {
+    50% {
+        transform: rotate(-90deg);
+    }
+}
+
+.index1 {
+    text-align: center;
+    font-size: 2rem;
+    width: 80%;
+    margin: auto;
+}
+
+/* index1.html */
+
+.container2 {
+    width: 40%;
+	margin: auto;
+	display: flex;
+    align-items: center;
+	justify-content: center;
+}
+
+.c2-box1 {
+    width: 100px;
+	height: 100px;
+    background-color: dodgerblue;
+    margin: 15px;
+    transition: width 2s ease 0s;
+}
+
+.c2-box1:hover {
+    width: 300px;
+}
+
+.c2-box2 {
+    width: 100px;
+	height: 100px;
+	background-color: red;
+	margin: 15px;
+	transition: width 2s ease-out 0s, height 3s ease-out 0s;
+}
+
+.c2-box2:hover {
+    width: 300px;
+	height: 300px;
+}
+
+.c2-box3 {
+    width: 100px;
+	height: 100px;
+    background-color: dodgerblue;
+    margin: 15px;
+    transition: width 2s linear 0s;
+}
+
+.c2-box3:hover {
+    width: 300px;
+}
+
+.c2-box4 {
+    width: 100px;
+    height: 100px;
+	background-color: red;
+	margin: 15px;
+	transition: width 2s ease-out 0s;
+}
+
+.c2-box4:hover {
+    width: 300px;
+}
+
+.c2-box5 {
+    width: 100px;
+    height: 100px;
+	background-color: dodgerblue;
+	margin: 15px;
+	transition: width 2s ease-in 0s;
+}
+
+.c2-box5:hover {
+    width: 300px;
+}
+
+.c2-box6 {
+    width: 100px;
+    height: 100px;
+	background-color: red;
+	margin: 15px;
+	transition: width 2s ease-in-out 0s;
+}
+
+.c2-box6:hover {
+    width: 300px;
+}
+
+.c2-box7 {
+    width: 100px;
+    height: 100px;
+	background-color: dodgerblue;
+	margin: 15px;
+	transition: width 2s ease-out 0s;
+}
+
+.c2-box7:hover {
+    width: 300px;
+}
+
+.back-next {
+    width: 40%;
+	margin: auto;
+	text-align: center;
+	font-size: 1.8rem;
+    position: relative;
+    left: 20px;
+}
+
+.back {
+    color: darkmagenta;
+}
+
+/* index2.html */
+
+.ind-container {
+    width: 60vw;
+    height: 8%;
+    margin: auto;
+	display: flex;
+    justify-content: center;
+    position: fixed;
+	top: 0;
+	left: 20vw;
+	z-index: 1;
+}
+
+.ind-left {
+    Background-color: orange;
+	font-size: 3rem;
+	margin-right: 10px;
+}
+
+.ind-mid {
+    Background-color: white;
+	font-size: 3rem;
+	margin-right: 10px;
+}
+
+.ind-right {
+    Background-color: green;
+	font-size: 3rem;
+	margin-right: 10px;
+}
+
+.sky {
+    background-image: url(img/sky.jpg);
+    background-size: cover;
+    height: 100vh;
+	width: 600%;
+    margin: 0px;
+    position: relative;
+	/* animation: sky 5s linear 0s infinite; */
+}
+
+/* @keyframes sky {
+    100% {
+        transform: translateX(-1000px);
+    }
+} */
+
+.sun {
+	width: 100%;
+	position: absolute;
+	top: 80px;
+	right: 80px;
+	z-index: 1;
+	text-align: right;
+}
+
+.sun-img {
+    animation: sun 100s linear 0s infinite;
+}
+
+@keyframes sun {
+    0% {
+        transform: translateX(0px);
+    }
+
+	100% {
+		transform: translateX(-1000px);
+	}
+}
+
+.road {
+    background-image: url(img/road.jpg);
+    height: 200px;
+	width: 600%;
+	position: absolute;
+	bottom: 0px;
+	left: 0px;
+	right: 0px;
+    z-index: 1;
+	animation: road 15s linear 0s infinite;
+}
+
+@keyframes road {
+	100% {
+		transform: translateX(-3000px);
+	}
+}
+
+.city {
+    background-image: url(img/city.png);
+    height: 200px;
+	width: 600%;
+	position: absolute;
+	bottom: 200px;
+	left: 0px;
+	right: 0px;
+    z-index: 1;
+	animation: city 50s linear 0s infinite;
+}
+
+@keyframes city {
+	100% {
+		transform: translateX(-3000px);
+	}
+}
+
+.car {
+    background-image: url(img/car.png);
+    background-size: 450px;
+	background-repeat: no-repeat;
+	background-position: bottom;
+    height: 250px;
+	width: 100%;
+    position: absolute;
+	bottom: 105px;
+	z-index: 2;
+    animation: car 1s linear 2s infinite;
+}
+
+@keyframes car {
+	0% {
+		transform: translateY(-1px);
+	}
+	50% {
+		transform: translateY(1px);
+	}
+	100% {
+		transform: translateY(-1px);
+	}
+}
+
+.wheel {
+	height: 100px;
+	width: 100%;
+	position: absolute;
+	top: 506px;
+    left: 649px;
+	z-index: 2;
+}
+
+.front-wheel {
+    position: absolute;
+	left: 200px;
+	animation: wheel-rotate 1.5s linear 2s infinite;
+}
+
+.rear-wheel {
+    position: absolute;
+	left: -76px;
+	animation: wheel-rotate 1.5s linear 0s infinite;
+}
+
+@keyframes wheel-rotate {
+	100% {
+		transform: rotate(360deg)
+	}
+}
+
+.flag {
+    height: 100px;
+	width: 100%;
+	position: absolute;
+	left: 0;
+	right: 0;
+	bottom: 212px;
+	z-index: 2;
+}
+
+.flag-img {
+	position: absolute;
+	left: 58%;
+}
