@@ -355,7 +355,7 @@ body {
 .rear-wheel {
     position: absolute;
 	left: -76px;
-	animation: wheel-rotate 1.5s linear 1   s infinite;
+	animation: wheel-rotate 1.5s linear 1s infinite;
 }
 
 @keyframes wheel-rotate {
